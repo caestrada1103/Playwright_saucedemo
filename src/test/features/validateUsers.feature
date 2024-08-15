@@ -1,10 +1,6 @@
-@validateUsers
 Feature: Login to a website
-
-  Background: go to website
-    Given I open the website
-
-  @smokeTest
+  
+  @thisATest
   Scenario: user can successful login
     When I login with the user 'standard_user'
     Then I should see the header 'Swag Labs'

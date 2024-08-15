@@ -1,11 +1,11 @@
 {
     "default":{
         "paths":[
-            "src/test/features/"
+            "./src/test/features/"
         ],
         "dryRun":true,
         "require":[
-            "src/test/steps/*.ts"
+            "./src/test/steps/*.ts"
         ],
         "requireModule":[
             "ts-node/register"

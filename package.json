@@ -6,6 +6,7 @@
   "scripts": {
     "open": "npx playwright test --ui",
     "test": "cucumber-js test",
+    "test:play": "npx playwright test",
     "debug": "npx playwright test --debug",
     "codegen": "npx playwright codegen"
   },

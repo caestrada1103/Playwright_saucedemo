@@ -1,18 +1,14 @@
-module.exports ={
-    default:{
-        tags: process.env.npm_config_TAGS || "",
-        paths:[
-            "src/tests/features"
-        ],
-        dryRun:true,
-        require:[
-            "src/tests/steps/*.ts"
-        ],
-        requireModule:[
-            "ts-node/register"
-        ],
-        formatOptions:{
-            snippetInterface: "async-await"
-        }
-    }
-}
+let options = [
+    "--require-module ts-node/register",
+    "--require ./src/test/steps/*.ts",
+    "--format progress",
+].join(' ');
+
+let run_features = [
+    "./src/test/features/",
+    options,
+].join(' ');
+
+module.exports = {
+    test_runner: run_features
+};
